@@ -1,0 +1,11 @@
+# Claude Code machine-local configuration
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Agent Needle machine-local overrides
+.agent/IDENTITY.local.md
+.agent/CONFIG.local.md
+
+# Temporary memory processing artifacts
+.memory/.cache/
+.memory/*.tmp
