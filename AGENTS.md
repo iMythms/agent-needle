@@ -190,17 +190,26 @@ A decision record should contain:
 
 Supersede old decisions rather than silently rewriting their history.
 
-### Active work
+### Task lifecycle
 
-Maintain `.memory/ACTIVE.md` as the concise resumption point.
+Before substantive implementation, create or update a concise entry in
+`.memory/ACTIVE.md` with `Status: in progress`, the objective, intended next
+steps, and verification plan. Relevant read-only discovery may happen first.
 
-For each active task, include:
+Update that entry when progress, scope, blockers, or next actions materially
+change, so work can resume after interruption or context compaction.
 
-- Objective.
-- Current status.
-- Verified progress.
-- Blocker or next action.
-- Relevant files or decision records.
+When the task is complete:
+
+- Record `Status: completed`, the outcome, and verification results in the
+  dated episode.
+- Preserve useful verified facts in `state/` and consequential decisions
+  with rationale in `decisions/`, when applicable.
+- Remove the task from `ACTIVE.md` in the same update.
+
+Keep genuinely unfinished work in `ACTIVE.md` with its exact next action.
+If nothing remains, write `No active work.` ACTIVE.md is a resumption point,
+not a history log.
 
 ### Memory safety
 
