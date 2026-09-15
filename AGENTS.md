@@ -194,6 +194,10 @@ Supersede old decisions rather than silently rewriting their history.
 
 Maintain `.memory/ACTIVE.md` as the concise resumption point.
 
+For substantive unfinished work, save enough context for another session to
+resume without the conversation. Update at meaningful milestones and before
+handoff; do not wait until completion.
+
 For each active task, include:
 
 - Objective.
@@ -201,6 +205,10 @@ For each active task, include:
 - Verified progress.
 - Blocker or next action.
 - Relevant files or decision records.
+
+Remove completed tasks after preserving any useful durable context.
+Completion alone does not require a permanent memory record.
+If no unfinished work remains, write `No active work.`.
 
 ### Memory safety
 
